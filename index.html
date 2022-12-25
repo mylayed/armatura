@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221221233955">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221225232245">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,27 +29,27 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="" class="menu__link">
+								<a href="#" data-goto-header data-goto=".about" class="menu__link">
 									Про нас
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">
+								<a href="#" data-goto-header data-goto=".products" class="menu__link">
 									Продукция
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">
+								<a href="#" data-goto-header data-goto=".sertification" class="menu__link">
 									Сертификаты
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">
+								<a href="#" data-goto-header data-goto=".application" class="menu__link">
 									Співпраця
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">
+								<a href="#" data-goto-header data-goto=".contacts" class="menu__link">
 									Контакты
 								</a>
 							</li>
@@ -158,10 +158,14 @@
 								</h2>
 							</div>
 							<p class="about__text">
-								ТОВ "Завод гідроарматури" здійснює виробництво арматури різних типів, а також випускає рукави високого тиску для гідравлічних систем, є одним із співзасновників Асоціації "Ліга машинобудівників і роботодавців України "Укрмашбуд".
+								ТОВ "Завод гідроарматури" здійснює виробництво арматури різних типів, а також випускає рукави
+								високого тиску для гідравлічних систем, є одним із співзасновників Асоціації "Ліга
+								машинобудівників і роботодавців України "Укрмашбуд".
 							</p>
 							<p class="about__text">
-								Уся продукція заводу, зокрема муфти гідравлічні для установок, що потребують високого обертового моменту, фітинги, гайки, РВТ тощо, мають низьку вартість, що забезпечується за рахунок чіткої організації виробництва та обладнання високої якості.
+								Уся продукція заводу, зокрема муфти гідравлічні для установок, що потребують високого обертового
+								моменту, фітинги, гайки, РВТ тощо, мають низьку вартість, що забезпечується за рахунок чіткої
+								організації виробництва та обладнання високої якості.
 							</p>
 							<p class="about__text">
 								На заводі впроваджено систему управління якістю ISO 9001
@@ -183,6 +187,8 @@
 							Продукція
 						</h2>
 					</div>
+				</div>
+				<div class="products__container">
 					<div class="products__slider swiper">
 						<div class="products__wrapper swiper-wrapper">
 							<div class="products__slide swiper-slide">
@@ -190,27 +196,24 @@
 									<div class="products__slide-img">
 										<picture><source srcset="img/products-slide.webp" type="image/webp"><img src="img/products-slide.jpg" alt=""></picture>
 									</div>
-									<div class="products__slide-body">
-										<div class="products__slide-decor">
-											<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
+									<div class="products__slide-body-box">
+										<div class="products__slide-body">
+											<div class="products__slide-decor">
+												<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
+												<picture><source srcset="img/icons/products-decor-hover.webp" type="image/webp"><img src="img/icons/products-decor-hover.png" alt=""></picture>
+											</div>
+											<div class="products__slide-name">
+												Виготовлення РВД
+											</div>
 										</div>
-										<div class="products__slide-name">
-											Виготовлення РВД
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="products__slide swiper-slide">
-								<div class="products__slide-box">
-									<div class="products__slide-img">
-										<picture><source srcset="img/products-slide.webp" type="image/webp"><img src="img/products-slide.jpg" alt=""></picture>
-									</div>
-									<div class="products__slide-body">
-										<div class="products__slide-decor">
-											<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
-										</div>
-										<div class="products__slide-name">
-											Виготовлення РВД
+										<div class="products__slide-info-box">
+											<div class="products__slide-body-text">
+												Якісні рукави високого тиску з наконечниками різних типорозмірів і конфігурацій за
+												прийнятними цінами і в будь-яких кількостях.
+											</div>
+											<a href="#" data-popup="#popup" class="products__slide-body-link">
+												Детальніше
+											</a>
 										</div>
 									</div>
 								</div>
@@ -220,12 +223,24 @@
 									<div class="products__slide-img">
 										<picture><source srcset="img/products-slide.webp" type="image/webp"><img src="img/products-slide.jpg" alt=""></picture>
 									</div>
-									<div class="products__slide-body">
-										<div class="products__slide-decor">
-											<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
+									<div class="products__slide-body-box">
+										<div class="products__slide-body">
+											<div class="products__slide-decor">
+												<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
+												<picture><source srcset="img/icons/products-decor-hover.webp" type="image/webp"><img src="img/icons/products-decor-hover.png" alt=""></picture>
+											</div>
+											<div class="products__slide-name">
+												Виготовлення РВД
+											</div>
 										</div>
-										<div class="products__slide-name">
-											Виготовлення РВД
+										<div class="products__slide-info-box">
+											<div class="products__slide-body-text">
+												Якісні рукави високого тиску з наконечниками різних типорозмірів і конфігурацій за
+												прийнятними цінами і в будь-яких кількостях.
+											</div>
+											<a href="#" class="products__slide-body-link">
+												Детальніше
+											</a>
 										</div>
 									</div>
 								</div>
@@ -235,33 +250,433 @@
 									<div class="products__slide-img">
 										<picture><source srcset="img/products-slide.webp" type="image/webp"><img src="img/products-slide.jpg" alt=""></picture>
 									</div>
-									<div class="products__slide-body">
-										<div class="products__slide-decor">
-											<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
+									<div class="products__slide-body-box">
+										<div class="products__slide-body">
+											<div class="products__slide-decor">
+												<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
+												<picture><source srcset="img/icons/products-decor-hover.webp" type="image/webp"><img src="img/icons/products-decor-hover.png" alt=""></picture>
+											</div>
+											<div class="products__slide-name">
+												Виготовлення РВД
+											</div>
 										</div>
-										<div class="products__slide-name">
-											Виготовлення РВД
+										<div class="products__slide-info-box">
+											<div class="products__slide-body-text">
+												Якісні рукави високого тиску з наконечниками різних типорозмірів і конфігурацій за
+												прийнятними цінами і в будь-яких кількостях.
+											</div>
+											<a href="#" class="products__slide-body-link">
+												Детальніше
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__slide swiper-slide">
+								<div class="products__slide-box">
+									<div class="products__slide-img">
+										<picture><source srcset="img/products-slide.webp" type="image/webp"><img src="img/products-slide.jpg" alt=""></picture>
+									</div>
+									<div class="products__slide-body-box">
+										<div class="products__slide-body">
+											<div class="products__slide-decor">
+												<picture><source srcset="img/icons/products-decor.webp" type="image/webp"><img src="img/icons/products-decor.png" alt=""></picture>
+												<picture><source srcset="img/icons/products-decor-hover.webp" type="image/webp"><img src="img/icons/products-decor-hover.png" alt=""></picture>
+											</div>
+											<div class="products__slide-name">
+												Виготовлення РВД
+											</div>
+										</div>
+										<div class="products__slide-info-box">
+											<div class="products__slide-body-text">
+												Якісні рукави високого тиску з наконечниками різних типорозмірів і конфігурацій за
+												прийнятними цінами і в будь-яких кількостях.
+											</div>
+											<a href="#" class="products__slide-body-link">
+												Детальніше
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="button" class="swiper-button-prev">
-							<img src="img/icons/arrow-prev.svg" alt="">
+					</div>
+					<button type="button" class="swiper-button-prev">
+						<img src="img/icons/arrow-prev.svg" alt="">
+					</button>
+					<button type="button" class="swiper-button-next">
+						<img src="img/icons/arrow-next.svg" alt="">
+					</button>
+				</div>
+			</section>
+			<section class="history">
+				<div class="history__container">
+					<div class="history__box-title box-title">
+						<div class="history__title-text box-title__text">
+							Завод гидроарматуры
+						</div>
+						<h2 class="history__title box-title__title">
+							Історія заводу
+						</h2>
+					</div>
+					<div class="history__box">
+						<div class="history__box-item">
+							<div class="history__year">
+								1980
+							</div>
+							<div class="history__info-box">
+								<div class="history__info-title">
+									Початок роботи заводу
+									<div class="history__title-dot"></div>
+								</div>
+								<div class="history__info-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut maximus orci.
+									Curabitur feugiat scelerisque bibendum. Cras auctor scelerisque metus quis lobortis. Donec ut
+									imperdiet diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+									cubilia Curae; Mauris tincidunt justo nisi, a viverra enim mollis non.
+								</div>
+							</div>
+						</div>
+						<div class="history__box-item">
+							<div class="history__year">
+								1991
+							</div>
+							<div class="history__info-box">
+								<div class="history__info-title">
+									Відкриття першого філіалу
+									<div class="history__title-dot"></div>
+								</div>
+								<div class="history__info-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut maximus orci.
+									Curabitur feugiat scelerisque bibendum. Cras auctor scelerisque metus quis lobortis. Donec ut
+									imperdiet diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+									cubilia Curae; Mauris tincidunt justo nisi, a viverra enim mollis non.
+								</div>
+							</div>
+						</div>
+						<div class="history__box-item">
+							<div class="history__year">
+								2006
+							</div>
+							<div class="history__info-box">
+								<div class="history__info-title">
+									Відкриття нових филіалів
+									<div class="history__title-dot"></div>
+								</div>
+								<div class="history__info-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut maximus orci.
+									Curabitur feugiat scelerisque bibendum. Cras auctor scelerisque metus quis lobortis. Donec ut
+									imperdiet diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+									cubilia Curae; Mauris tincidunt justo nisi, a viverra enim mollis non.
+								</div>
+							</div>
+						</div>
+						<div class="history__box-item">
+							<div class="history__year">
+								2022
+							</div>
+							<div class="history__info-box">
+								<div class="history__info-title">
+									Завод зараз
+									<div class="history__title-dot"></div>
+								</div>
+								<div class="history__info-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut maximus orci.
+									Curabitur feugiat scelerisque bibendum. Cras auctor scelerisque metus quis lobortis. Donec ut
+									imperdiet diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+									cubilia Curae; Mauris tincidunt justo nisi, a viverra enim mollis non.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="application" style="background-image: url('img/application-bg.jpg');">
+				<div class="application__container">
+					<div class="application__info">
+						<div class="application__title">
+							Хочете розпочати співпрацю з заводом гідроарматури?
+						</div>
+						<div class="application__text">
+							Заповніть форму і ми зв’яжемось з вами для обговорення подробиць!
+						</div>
+					</div>
+					<div class="application__form-box" data-da=".dynamic,768,1">
+						<form action="#" class="application__form">
+							<div class="application__form-title">
+								Заповніть форму
+							</div>
+							<div class="application__input-body">
+								<div class="application__input-box" data-validate>
+									<input type="text" data-validate class="application__input" placeholder="Ваше ім’я">
+									<div class="application__input-attention">
+										<img src="img/icons/exclamation.svg" alt="">
+										<span>Вкажіть ім'я</span>
+									</div>
+								</div>
+								<div class="application__input-box" data-validate>
+									<input type="text" data-validate class="application__input" placeholder="+38 (0__) ___-__-__">
+									<div class="application__input-attention">
+										<img src="img/icons/exclamation.svg" alt="">
+										<span>Вкажіть номер телефону</span>
+									</div>
+								</div>
+							</div>
+							<div class="application__form-title">
+								Ваш запит
+							</div>
+							<div class="application__body">
+								<textarea class="application__textarea" data-validate placeholder="Введіть повідомлення..."></textarea>
+							</div>
+							<div class="application__btn">
+								Відправити запит
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="dynamic"></section>
+			<section class="sertification">
+				<div class="sertification__container">
+					<div class="sertification__box-title box-title">
+						<div class="sertification__title-text box-title__text">
+							Завод гідроарматуры
+						</div>
+						<h2 class="sertification__title box-title__title">
+							Сертифікати
+						</h2>
+					</div>
+					<div class="sertification__slider swiper">
+						<div class="sertification__wrapper swiper-wrapper">
+							<div class="sertification__slide swiper-slide">
+								<div class="sertification__slide-box">
+									<picture><source srcset="img/sertification-1.webp" type="image/webp"><img src="img/sertification-1.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="sertification__slide swiper-slide">
+								<div class="sertification__slide-box">
+									<picture><source srcset="img/sertification-2.webp" type="image/webp"><img src="img/sertification-2.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="sertification__slide swiper-slide">
+								<div class="sertification__slide-box">
+									<picture><source srcset="img/sertification-3.webp" type="image/webp"><img src="img/sertification-3.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="sertification__slide swiper-slide">
+								<div class="sertification__slide-box">
+									<picture><source srcset="img/sertification-1.webp" type="image/webp"><img src="img/sertification-1.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="sertification__button swiper-button-prev">
+							<img src="img/icons/sert-prev.svg" alt="">
 						</button>
-						<button type="button" class="swiper-button-next">
-							<img src="img/icons/arrow-next.svg" alt="">
+						<button type="button" class="sertification__button swiper-button-next">
+							<img src="img/icons/sert-next.svg" alt="">
 						</button>
 					</div>
 				</div>
 			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__box-title box-title">
+						<div class="contacts__title-text box-title__text">
+							Завод гідроарматуры
+						</div>
+						<h2 class="contacts__title box-title__title">
+							Сертифікати
+						</h2>
+					</div>
+				</div>
+				<div class="contacts__map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10374.981724819309!2d26.905072254180748!3d49.45152827006017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473200d8e0296fb5%3A0xf3b3e265aca8df34!2z0JfQsNCy0L7QtCDQs9GW0LTRgNC-0LDRgNC80LDRgtGD0YDQuA!5e0!3m2!1suk!2sua!4v1672000374351!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div class="contacts__container contacts__container_position">
+						<div class="contacts__box">
+							<div class="contacts__title">
+								Завод гідроарматури
+							</div>
+							<div class="contacts__body">
+								<div class="contacts__name">
+									Адреса
+								</div>
+								<div class="contacts__text">
+									м. Хмельницький,<br> вул. Курчатова, 118/5
+								</div>
+							</div>
+							<div class="contacts__body">
+								<div class="contacts__name">
+									Телефон
+								</div>
+								<ul class="contacts__list">
+									<li class="contacts__list-item">
+										<a href="tel:+380503818213" class="contacts__link">
+											+38 (050) 381 82 13
+										</a>
+									</li>
+									<li class="contacts__list-item">
+										<a href="tel:+380503818213" class="contacts__link">
+											+38 (050) 381 82 13
+										</a>
+									</li>
+									<li class="contacts__list-item">
+										<a href="tel:+380503818213" class="contacts__link">
+											+38 (050) 381 82 13
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="contacts__body">
+								<div class="contacts__name">
+									Email:
+								</div>
+								<a href="mailto:zavod_2003@ukr.net" class="contacts__link">
+									zavod_2003@ukr.net
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div id="popup" aria-hidden="true" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<button data-close type="button" class="popup__close">
+							<img src="img/icons/close.svg" alt="">
+						</button>
+						<div class="popup__box-title">
+							<div class="popup__title-decor">
+								<img src="img/icons/title-decor.svg" alt="">
+							</div>
+							<h2 class="popup__title">
+								Виготовлення<br> РВД
+							</h2>
+						</div>
+						<div class="popup__box-text">
+							<p class="popup__text">
+								ТОВ "Завод Гідроарматури" пропонує якісні рукави високого тиску з наконечниками різних типорозмірів і
+								конфігурацій за прийнятними цінами і в будь-яких кількостях.
+							</p>
+							<p class="popup__text">
+								Під час виготовлення РВТ, на вибір замовника, для з'єднань можуть бути використані фітинги виробництва
+								нашого заводу, а також фітинги інших європейських виробників (LWM, Manuli, Inteva, Disca, Bemix).
+							</p>
+							<p class="popup__text">
+								Підприємство здійснює виготовлення та ремонт гідравлічних шлангів різного тиску (низького, середнього,
+								високого, надвисокого), які відповідають Європейським стандартам DIN 20023, DIN 20022, DIN 20021, EN857,
+								EN855, EN854, EN853.
+							</p>
+							<p class="popup__text">
+								Здійснюємо експорт у країни ближнього і далекого зарубіжжя, а також відправлення в будь-яку точку
+								України.
+							</p>
+						</div>
+						<div class="popup__form-box">
+							<div class="popup__form-body">
+								<h2 class="popup__form-title">
+									Залишились питання?
+								</h2>
+								<div class="popup__form-text">
+									Заповніть форму і наш менеджер допоможе Вам з вибором
+								</div>
+								<form action="#" class="popup__form">
+									<div class="popup__input-box">
+										<div class="popup__input-body" data-validate>
+											<input name="form[]" data-validate type="text" class="popup__input" placeholder="Ваше ім’я">
+											<div class="popup__input-attention">
+												<img src="img/icons/exclamation.svg" alt="">
+												<span>Вкажіть ім'я</span>
+											</div>
+										</div>
+										<div class="popup__input-body" data-validate>
+											<input name="form[]" data-validate type="text" class="popup__input" placeholder="+38 (0__) ___-__-__">
+											<div class="popup__input-attention">
+												<img src="img/icons/exclamation.svg" alt="">
+												<span>Вкажіть номер телефону</span>
+											</div>
+										</div>
+									</div>
+									<div class="popup__box">
+										<textarea class="popup__textarea" name="form[]" data-validate placeholder="Ваше питання..."></textarea>
+									</div>
+									<button class="popup__btn">
+										Відправити запит
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</footer>
+		</main>
+
 	</div>
-	<script src="js/app.min.js?_v=20221221233955"></script>
+	<script src="js/app.min.js?_v=20221225232245"></script>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logo">
+				<a href="" class="header__logo">
+					<img src="img/logo.svg" alt="logo">
+					<span class="header-logo__text">
+						Завод гідро арматури
+					</span>
+				</a>
+			</div>
+			<div class="footer__box">
+				<nav class="footer__body">
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Про нас
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Продукція
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Сертифікати
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Співпраця
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Контакти
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__info">
+					<div class="footer__info-name">
+						Відділ продажів
+					</div>
+					<ul class="footer__info-list">
+						<li class="footer__info-item">
+							<a href="tel:+380950023509" class="footer__info-link">
+								+38 (095) 002 35 09
+							</a>
+						</li>
+						<li class="footer__info-item">
+							<a href="tel:+380950023509" class="footer__info-link">
+								+38 (095) 002 35 09
+							</a>
+						</li>
+						<li class="footer__info-item">
+							<a href="tel:+380950023509" class="footer__info-link">
+								+38 (095) 002 35 09
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
