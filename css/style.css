@@ -672,10 +672,6 @@ section {
   white-space: nowrap;
 }
 
-.main {
-  padding-top: 7.5rem;
-}
-
 .main__container {
   position: relative;
 }
@@ -2166,6 +2162,10 @@ button.swiper-pagination-bullet {
             column-gap: 5rem;
   }
 
+  .main {
+    padding-top: 7.5rem;
+  }
+
   .main__slide {
     padding-top: 9.0625rem;
   }
@@ -2461,6 +2461,10 @@ button.swiper-pagination-bullet {
     -webkit-column-gap: 1.875rem;
        -moz-column-gap: 1.875rem;
             column-gap: 1.875rem;
+  }
+
+  .main {
+    padding-top: 5.625rem;
   }
 
   .main__slide {
@@ -3182,6 +3186,18 @@ button.swiper-pagination-bullet {
       -webkit-column-gap: calc(1.875rem + 3.125 * (100vw - 20rem) / 63.125);
          -moz-column-gap: calc(1.875rem + 3.125 * (100vw - 20rem) / 63.125);
               column-gap: calc(1.875rem + 3.125 * (100vw - 20rem) / 63.125);
+    }
+}
+
+@supports (padding-top: clamp( 5.625rem , 5.0309405941rem  +  2.9702970297vw , 7.5rem )) {
+    .main {
+      padding-top: clamp( 5.625rem , 5.0309405941rem  +  2.9702970297vw , 7.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 5.625rem , 5.0309405941rem  +  2.9702970297vw , 7.5rem )) {
+    .main {
+      padding-top: calc(5.625rem + 1.875 * (100vw - 20rem) / 63.125);
     }
 }
 
