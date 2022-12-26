@@ -4081,18 +4081,6 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
-    function slideHover() {
-        const slideBox = document.querySelectorAll(".products__slide-box");
-        slideBox.forEach((item => {
-            item.addEventListener("mouseover", (() => {
-                item.classList.add("hover");
-            }));
-            item.addEventListener("mouseout", (() => {
-                item.classList.remove("hover");
-            }));
-        }));
-    }
-    slideHover();
     document.addEventListener("click", (e => {
         const targetEl = e.target;
         if (targetEl.classList.contains("products__slide-body-link")) targetEl.closest(".products__slide-box").classList.remove("hover");
