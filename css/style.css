@@ -876,12 +876,12 @@ section {
   transition: all 0.3s ease;
 }
 
-.products__slide-decor img:first-child {
+.products__slide-decor .products-decor {
   opacity: 1;
   visibility: visible;
 }
 
-.products__slide-decor img:last-child {
+.products__slide-decor .products-decor-hover {
   opacity: 0;
   visibility: hidden;
 }
@@ -2382,10 +2382,6 @@ button.swiper-pagination-bullet {
   .products__slide-decor {
     flex-size: 5rem;
   }
-
-  .products__slide-name {
-    padding: 1.5625rem;
-  }
 }
 
 @media (max-width: 20em) {
@@ -2548,7 +2544,7 @@ button.swiper-pagination-bullet {
   }
 
   .products__slide-name {
-    padding: 0.625rem;
+    padding: 1.25rem;
   }
 
   .products__slide-info-box {
@@ -3429,15 +3425,15 @@ button.swiper-pagination-bullet {
     }
 }
 
-@supports (padding: clamp( 0.625rem , 0.327970297rem  +  1.4851485149vw , 1.5625rem )) {
+@supports (padding: clamp( 1.25rem , 1.150990099rem  +  0.495049505vw , 1.5625rem )) {
     .products__slide-name {
-      padding: clamp( 0.625rem , 0.327970297rem  +  1.4851485149vw , 1.5625rem );
+      padding: clamp( 1.25rem , 1.150990099rem  +  0.495049505vw , 1.5625rem );
     }
 }
 
-@supports not (padding: clamp( 0.625rem , 0.327970297rem  +  1.4851485149vw , 1.5625rem )) {
+@supports not (padding: clamp( 1.25rem , 1.150990099rem  +  0.495049505vw , 1.5625rem )) {
     .products__slide-name {
-      padding: calc(0.625rem + 0.9375 * (100vw - 20rem) / 63.125);
+      padding: calc(1.25rem + 0.3125 * (100vw - 20rem) / 63.125);
     }
 }
 
@@ -3750,10 +3746,6 @@ button.swiper-pagination-bullet {
   .products__slide-decor {
     flex-size: 5rem;
   }
-
-  .products__slide-name {
-    padding: 1.5625rem;
-  }
 }
 
 @media (max-width: 40em) and (min-width: 20em) and (max-width: 83.125em) {
@@ -3766,18 +3758,6 @@ button.swiper-pagination-bullet {
 @supports not (flex-size: clamp( 5rem , 5rem  +  0vw , 5rem )) {
     .products__slide-decor {
       flex-size: calc(5rem + 0 * (100vw - 20rem) / 63.125);
-    }
-}
-
-@supports (padding: clamp( 1.5625rem , 1.5625rem  +  0vw , 1.5625rem )) {
-    .products__slide-name {
-      padding: clamp( 1.5625rem , 1.5625rem  +  0vw , 1.5625rem );
-    }
-}
-
-@supports not (padding: clamp( 1.5625rem , 1.5625rem  +  0vw , 1.5625rem )) {
-    .products__slide-name {
-      padding: calc(1.5625rem + 0 * (100vw - 20rem) / 63.125);
     }
 }
 }
@@ -3809,12 +3789,12 @@ button.swiper-pagination-bullet {
     background-color: #fff;
   }
 
-  .products__slide-box:hover .products__slide-decor img:first-child {
+  .products__slide-box:hover .products__slide-decor .products-decor {
     opacity: 0;
     visibility: hidden;
   }
 
-  .products__slide-box:hover .products__slide-decor img:last-child {
+  .products__slide-box:hover .products__slide-decor .products-decor-hover {
     opacity: 1;
     visibility: visible;
   }
