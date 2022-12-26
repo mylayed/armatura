@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221225232245">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221226113818">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,6 +71,12 @@
 								<div class="main__text">
 									Якісні РВД та фітинги з перших рук!
 								</div>
+								<button type="button" class="main__slider-btn swiper-button-prev">
+									<img src="img/icons/arrow-prev.svg" alt="">
+								</button>
+								<button type="button" class="main__slider-btn swiper-button-next">
+									<img src="img/icons/arrow-next.svg" alt="">
+								</button>
 							</div>
 						</div>
 						<div class="main__slide main__slide-ibg swiper-slide">
@@ -82,6 +88,12 @@
 								<div class="main__text">
 									Якісні РВД та фітинги з перших рук!
 								</div>
+								<button type="button" class="main__slider-btn swiper-button-prev">
+									<img src="img/icons/arrow-prev.svg" alt="">
+								</button>
+								<button type="button" class="main__slider-btn swiper-button-next">
+									<img src="img/icons/arrow-next.svg" alt="">
+								</button>
 							</div>
 						</div>
 						<div class="main__slide main__slide-ibg swiper-slide">
@@ -93,15 +105,15 @@
 								<div class="main__text">
 									Якісні РВД та фітинги з перших рук!
 								</div>
+								<button type="button" class="main__slider-btn swiper-button-prev">
+									<img src="img/icons/arrow-prev.svg" alt="">
+								</button>
+								<button type="button" class="main__slider-btn swiper-button-next">
+									<img src="img/icons/arrow-next.svg" alt="">
+								</button>
 							</div>
 						</div>
 					</div>
-					<button type="button" class="main__slider-btn swiper-button-prev">
-						<img src="img/icons/arrow-prev.svg" alt="">
-					</button>
-					<button type="button" class="main__slider-btn swiper-button-next">
-						<img src="img/icons/arrow-next.svg" alt="">
-					</button>
 				</div>
 			</section>
 			<section class="info">
@@ -415,7 +427,7 @@
 									</div>
 								</div>
 								<div class="application__input-box" data-validate>
-									<input type="text" data-validate class="application__input" placeholder="+38 (0__) ___-__-__">
+									<input type="tel" placeholder="+38 (0__) ___-__-__" data-validate class="application__input input-phone">
 									<div class="application__input-attention">
 										<img src="img/icons/exclamation.svg" alt="">
 										<span>Вкажіть номер телефону</span>
@@ -542,7 +554,7 @@
 				<div class="popup__wrapper">
 					<div class="popup__content">
 						<button data-close type="button" class="popup__close">
-							<img src="img/icons/close.svg" alt="">
+							<img class="popup__close_img" src="img/icons/close.svg" alt="">
 						</button>
 						<div class="popup__box-title">
 							<div class="popup__title-decor">
@@ -589,7 +601,7 @@
 											</div>
 										</div>
 										<div class="popup__input-body" data-validate>
-											<input name="form[]" data-validate type="text" class="popup__input" placeholder="+38 (0__) ___-__-__">
+											<input type="tel" data-validate type="text" class="popup__input input-phone" placeholder="+38 (0__) ___-__-__">
 											<div class="popup__input-attention">
 												<img src="img/icons/exclamation.svg" alt="">
 												<span>Вкажіть номер телефону</span>
@@ -608,10 +620,31 @@
 					</div>
 				</div>
 			</div>
+			<div id="popup-ok" aria-hidden="true" class="popup popup_ok">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<button data-close type="button" class="popup__close">
+							<img class="popup__close_img" src="img/icons/close.svg" alt="">
+						</button>
+						<div class="popup__body">
+							<div class="popup__img">
+								<img src="img/icons/ok.svg" alt="">
+							</div>
+							<div class="popup__title">
+								Дякуємо за запит!
+							</div>
+							<div class="popup__text">
+								Наш менеджер зв’яжеться з Вами найближчим часом
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
 	</div>
-	<script src="js/app.min.js?_v=20221225232245"></script>
+	<script src="https://unpkg.com/imask?_v=20221226113818"></script>
+	<script src="js/app.min.js?_v=20221226113818"></script>
 	<footer class="footer">
 		<div class="footer__container">
 			<div class="footer__logo">
@@ -626,27 +659,27 @@
 				<nav class="footer__body">
 					<ul class="footer__list">
 						<li class="footer__list-item">
-							<a href="#" class="footer__link">
+							<a href="#" data-goto-header data-goto=".about" class="footer__link">
 								Про нас
 							</a>
 						</li>
 						<li class="footer__list-item">
-							<a href="#" class="footer__link">
+							<a href="#" data-goto-header data-goto=".products" class="footer__link">
 								Продукція
 							</a>
 						</li>
 						<li class="footer__list-item">
-							<a href="#" class="footer__link">
+							<a href="#" data-goto-header data-goto=".sertification" class="footer__link">
 								Сертифікати
 							</a>
 						</li>
 						<li class="footer__list-item">
-							<a href="#" class="footer__link">
+							<a href="#" data-goto-header data-goto=".application" class="footer__link">
 								Співпраця
 							</a>
 						</li>
 						<li class="footer__list-item">
-							<a href="#" class="footer__link">
+							<a href="#" data-goto-header data-goto=".contacts" class="footer__link">
 								Контакти
 							</a>
 						</li>

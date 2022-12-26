@@ -4097,6 +4097,18 @@
         const targetEl = e.target;
         if (targetEl.classList.contains("products__slide-body-link")) targetEl.closest(".products__slide-box").classList.remove("hover");
     }));
+    const phoneInput = document.querySelectorAll(".input-phone");
+    phoneInput.forEach((item => {
+        new IMask(item, {
+            mask: "+{38} ({0}00) 000-00-00"
+        });
+    }));
+    document.querySelectorAll(".popup__close");
+    document.addEventListener("click", (e => {
+        const targetEl = e.target;
+        console.log(targetEl);
+        if (targetEl.classList.contains("popup__close_img") || targetEl.classList.contains("popup__wrapper")) location.reload();
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
