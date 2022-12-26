@@ -2362,12 +2362,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 48em) and (max-width: 20em) {
-  .application__input {
-    width: 9.375rem;
-  }
-}
-
 @media (max-width: 45em) {
   .sertification__slide-box img {
     width: 100%;
@@ -2937,7 +2931,7 @@ button.swiper-pagination-bullet {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-    width: 100%;
+    width: 100% !important;
   }
 }
 
@@ -3791,26 +3785,6 @@ button.swiper-pagination-bullet {
 @supports not (padding: clamp( 1.5625rem , 1.5625rem  +  0vw , 1.5625rem )) {
     .products__slide-name {
       padding: calc(1.5625rem + 0 * (100vw - 20rem) / 63.125);
-    }
-}
-}
-
-@media (max-width: 48em) and (min-width: 83.125em) {
-  .application__input {
-    width: 31.25rem;
-  }
-}
-
-@media (max-width: 48em) and (min-width: 20em) and (max-width: 83.125em) {
-@supports (width: clamp( 9.375rem , 2.4443069307rem  +  34.6534653465vw , 31.25rem )) {
-    .application__input {
-      width: clamp( 9.375rem , 2.4443069307rem  +  34.6534653465vw , 31.25rem );
-    }
-}
-
-@supports not (width: clamp( 9.375rem , 2.4443069307rem  +  34.6534653465vw , 31.25rem )) {
-    .application__input {
-      width: calc(9.375rem + 21.875 * (100vw - 20rem) / 63.125);
     }
 }
 }
