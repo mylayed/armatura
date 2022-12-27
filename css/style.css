@@ -2156,6 +2156,12 @@ button.swiper-pagination-bullet {
     padding-bottom: 15rem;
   }
 
+  .footer__container {
+    -webkit-column-gap: 11.25rem;
+       -moz-column-gap: 11.25rem;
+            column-gap: 11.25rem;
+  }
+
   .footer__box {
     -webkit-column-gap: 5rem;
        -moz-column-gap: 5rem;
@@ -2455,6 +2461,12 @@ button.swiper-pagination-bullet {
 
   .footer {
     padding-bottom: 3.125rem;
+  }
+
+  .footer__container {
+    -webkit-column-gap: 3.125rem;
+       -moz-column-gap: 3.125rem;
+            column-gap: 3.125rem;
   }
 
   .footer__box {
@@ -3170,6 +3182,22 @@ button.swiper-pagination-bullet {
 @supports not (padding-bottom: clamp( 3.125rem , -0.6373762376rem  +  18.8118811881vw , 15rem )) {
     .footer {
       padding-bottom: calc(3.125rem + 11.875 * (100vw - 20rem) / 63.125);
+    }
+}
+
+@supports ((-moz-column-gap: clamp( 3.125rem , 0.5507425743rem  +  12.8712871287vw , 11.25rem )) or (column-gap: clamp( 3.125rem , 0.5507425743rem  +  12.8712871287vw , 11.25rem ))) {
+    .footer__container {
+      -webkit-column-gap: clamp( 3.125rem , 0.5507425743rem  +  12.8712871287vw , 11.25rem );
+         -moz-column-gap: clamp( 3.125rem , 0.5507425743rem  +  12.8712871287vw , 11.25rem );
+              column-gap: clamp( 3.125rem , 0.5507425743rem  +  12.8712871287vw , 11.25rem );
+    }
+}
+
+@supports not ((-moz-column-gap: clamp( 3.125rem , 0.5507425743rem  +  12.8712871287vw , 11.25rem )) or (column-gap: clamp( 3.125rem , 0.5507425743rem  +  12.8712871287vw , 11.25rem ))) {
+    .footer__container {
+      -webkit-column-gap: calc(3.125rem + 8.125 * (100vw - 20rem) / 63.125);
+         -moz-column-gap: calc(3.125rem + 8.125 * (100vw - 20rem) / 63.125);
+              column-gap: calc(3.125rem + 8.125 * (100vw - 20rem) / 63.125);
     }
 }
 
